@@ -1,0 +1,11 @@
+appId: com.trackerteer.grg
+---
+
+- tapOn:
+    id: "button_add_to_cart"
+- tapOn: "Checkout"
+- scrollUntilVisible:
+    element: "Place order"
+- tapOn: "Place order"
+- tapOn: "Confirm"
+- tapOn: "View"

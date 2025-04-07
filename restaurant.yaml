@@ -1,0 +1,15 @@
+url: https://dev.rockygo.com/
+---
+
+- launchApp
+- tapOn: "LOGIN"
+- tapOn: "Email"
+- inputText: 
+    text: "ysabel.trackerteer@gmail.com"
+    into: "Email"
+- tapOn: "Password"
+- inputText: 
+    text: "Test1234!"
+    into: "Password"
+- tapOn:
+    id: "submit"

@@ -1,0 +1,9 @@
+appId: com.trackerteer.grg
+---
+- runFlow: order_module.yaml
+- runFlow: "../vouchers/amount_voucher_module.yaml"
+- scrollUntilVisible: 
+      element: "Place order"
+- tapOn: "Place order"
+- tapOn: "Confirm"
+- tapOn: "View"

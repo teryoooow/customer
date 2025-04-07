@@ -1,0 +1,11 @@
+appId: com.trackerteer.grg
+---
+- tapOn: "Select"
+- scrollUntilVisible: 
+        element: ".*RM.* off"
+
+- tapOn:
+    id: "text_view_show" # Update with the correct ID if available
+    below:  ".*RM.* off" # Ensures it taps the "SELECT" button in the same row as "RM100 off"
+
+   

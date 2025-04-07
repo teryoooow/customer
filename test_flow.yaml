@@ -1,0 +1,9 @@
+appId: com.trackerteer.grg
+---
+
+- launchApp
+- tapOn: "Search"
+- inputText:
+    text: "Burger"
+    into: "Search"
+- tapOn: "Restaurants"

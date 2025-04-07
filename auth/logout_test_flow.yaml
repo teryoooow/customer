@@ -1,0 +1,12 @@
+appId: com.trackerteer.grg
+---
+
+- launchApp
+- assertVisible:
+    id: "image_account_menu"
+- tapOn:
+    id: "image_account_menu"
+- tapOn: "Logout"
+- tapOn: "Yes"
+- tapOn:
+    id: "image_account_menu"

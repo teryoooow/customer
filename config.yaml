@@ -1,0 +1,5 @@
+appId: com.trackerteer.grg
+---
+
+- runFlow: "auth/login_test_flow.yaml"
+- runFlow: "auth/logout_test_flow.yaml"

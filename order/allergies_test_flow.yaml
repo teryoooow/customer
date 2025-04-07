@@ -1,0 +1,10 @@
+appId: com.trackerteer.grg
+---
+
+- repeat:
+    times: 50
+    commands:
+        - launchApp
+        - runFlow: food_type_module.yaml
+        - runFlow: allergies_module.yaml
+        - runFlow: add_to_cart_module.yaml

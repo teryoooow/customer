@@ -1,0 +1,40 @@
+appId: com.trackerteer.grg
+
+---
+- assertVisible: "LOGIN"
+- tapOn: "Sign up now"
+- assertVisible: "SIGN UP"
+# - tapOn: "+93"
+# - scrollUntilVisible:
+#     element: "+63 Philippines"
+#     direction: "DOWN"
+#     speed: 70
+#     visibilityPercentage: 100
+#     timeout: 50000
+# - tapOn: "+63 Philippines"
+- tapOn: "Mobile Number"
+- inputRandomNumber:
+    length: 10
+- back
+- tapOn: "Email"
+- inputRandomEmail
+- tapOn: "Password"
+- inputText:
+    text: "Test1234!"
+    into: "Password"
+- tapOn: "Confirm Password"
+- inputText:
+    text: "Test1234!"
+    into: "Confirm Password"
+- tapOn: "First name"
+- inputRandomText:
+    length: 10
+- tapOn: "Last name"
+- inputRandomText:
+    length: 10
+- back
+- tapOn: "Birthday"
+- tapOn: "OK"
+- tapOn:
+    id: "checkbox_agreed_terms_policy"
+- tapOn: "Sign up"

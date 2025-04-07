@@ -1,0 +1,13 @@
+appId: com.trackerteer.grg
+---
+- launchApp
+- tapOn:
+    id: "text_view_favorites_view_more"
+- tapOn:
+    id: "com.trackerteer.grg:id/card_view_image"
+- tapOn:
+    id: "button_add_to_cart"
+- tapOn: "Checkout"
+- tapOn:
+    id: "image_button_add_item"
+    repeat: 9

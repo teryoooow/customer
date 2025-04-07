@@ -1,0 +1,19 @@
+appId: com.trackerteer.grg
+---
+
+- launchApp
+- assertVisible:
+    id: "image_account_menu"
+- tapOn:
+    id: "image_account_menu"
+- tapOn: "Email"
+- inputText:
+    text: "terelle.trackerteer@gmail.com"
+    into: "Email"
+- tapOn: "Password"
+- inputText:
+    text: "Test1234!"
+    into: "Password"
+- back
+- tapOn:
+    id: "button_login"

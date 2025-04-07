@@ -1,0 +1,18 @@
+appId: com.trackerteer.grg
+
+---
+
+- scrollUntilVisible:
+    element: "Allergies"
+- tapOn: "Add your request"
+- inputText:
+    text: "This is a test note.."
+    into: "Note"
+- back
+- tapOn: "Allergies"
+- inputText:
+    text: "Sample Allergy"
+    into: "Allergies"
+- tapOn:
+    id: "image_view_add"
+- back

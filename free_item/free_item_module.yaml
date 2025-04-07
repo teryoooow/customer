@@ -1,0 +1,9 @@
+appId: com.trackerteer.grg
+---
+- assertVisible:
+    text: "Free Items"
+- tapOn:
+    id: "button_select_free_item"
+- tapOn:
+    id: "image_button_add_item"
+- tapOn: "Add"

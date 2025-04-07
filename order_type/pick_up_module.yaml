@@ -1,0 +1,7 @@
+appId: com.trackerteer.grg
+---
+- scrollUntilVisible:
+    element: "Place order"
+- tapOn: "Order Type"
+- tapOn: "Pick-up"
+- tapOn: "Set"

@@ -1,0 +1,21 @@
+appId: com.trackerteer.grg
+---
+
+- tapOn: "Select"
+- repeat:
+    while:
+      notVisible: "FREE DELIVERY"
+    commands:
+      - swipe: down
+- tapOn:
+    id: "text_view_show" # Update with the correct ID if available
+    below: ".*% off.*" # Ensures it taps the "SELECT" button in the same row as "FREE DELIVERY"
+- scrollUntilVisible: 
+      element: "Place order"
+- tapOn: "Place order"
+
+
+- tapOn: "Select"
+- tapOn:
+    id: "text_view_show" # Update with the correct ID if available
+    below: ".*% off.*" # Ensures it taps the "SELECT" button in the same row as "FREE DELIVERY"

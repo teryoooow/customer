@@ -1,0 +1,8 @@
+appId: com.trackerteer.grg
+---
+
+- launchApp
+- repeat:
+    times: 50
+    commands:
+      - runFlow: recent_purchase_module.yaml

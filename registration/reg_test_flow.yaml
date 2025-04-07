@@ -1,0 +1,19 @@
+appId: com.trackerteer.grg
+
+---
+- tapOn: "+93"
+- scrollUntilVisible:
+    element: "+63 Philippines"
+    direction: "DOWN"
+    speed: 70
+    visibilityPercentage: 100
+    timeout: 50000
+- tapOn: "+63 Philippines"
+- tapOn: "Mobile Number"
+- inputText:
+    text: "09750035937"
+    into: "Mobile Number"
+- back
+- tapOn:
+    id: "checkbox_agreed_terms_policy"
+- tapOn: "Sign up"

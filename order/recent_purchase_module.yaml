@@ -1,0 +1,14 @@
+appId: com.trackerteer.grg
+---
+
+- assertVisible:
+   id: com.trackerteer.grg:id/text_view_recent_purchase
+- tapOn:
+   id: com.trackerteer.grg:id/image_view_restaurant
+   index: 0
+- scrollUntilVisible: 
+    element: "Place order"
+- tapOn:
+   id: com.trackerteer.grg:id/button_check_out
+- tapOn: Confirm
+- tapOn: Dismiss

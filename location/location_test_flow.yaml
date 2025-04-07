@@ -1,0 +1,13 @@
+appId: com.trackerteer.grg
+---
+- launchApp
+- tapOn:
+    id: "image_view_location"
+- tapOn: "Select another location"
+- tapOn: "Search"
+- inputText:
+    text: "Petron Bangsar"
+    into: "Search"
+- tapOn: ".*Petron Car Wash.*"
+- tapOn: "Apply"
+- assertVisible: ".*Bangsar.*"

@@ -1,0 +1,25 @@
+appId: com.trackerteer.grg
+
+---
+- launchApp
+- assertVisible: 
+    id: "image_account_menu"
+- tapOn:
+    id: "image_account_menu"
+- tapOn: "My Account"
+- assertVisible: "My Information"
+- longPressOn: "First name"
+- tapOn: 'Select All'
+- eraseText 
+- inputText:
+    text: "Sample"
+    into: "First name"
+- back
+- longPressOn: "Last name"
+- tapOn: 'Select All'
+- eraseText
+- inputText: 
+    text: "User"
+    into: "Last name"
+- back
+- tapOn: "Update"

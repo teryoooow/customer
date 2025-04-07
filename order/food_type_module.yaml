@@ -1,0 +1,14 @@
+appId: com.trackerteer.grg
+---
+
+- tapOn:
+    id: com.trackerteer.grg:id/text_view_category
+    index: 0
+- tapOn:
+    id: com.trackerteer.grg:id/image_view_food_type
+    index: 0
+- tapOn:
+    id: com.trackerteer.grg:id/text_view_menu
+- tapOn:
+    id: com.trackerteer.grg:id/constraint_layout_main_content
+    index: 0

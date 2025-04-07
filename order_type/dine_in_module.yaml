@@ -1,0 +1,12 @@
+appId: com.trackerteer.grg
+---
+- scrollUntilVisible:
+    element: "Place order"
+- tapOn: "Order Type"
+- tapOn: "Dine-in"
+- tapOn: "Set"
+- tapOn: "Input table number"
+- inputText:
+    text: "Sample Dine-in notes"
+    into: "Dine-in notes"
+- back

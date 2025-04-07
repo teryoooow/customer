@@ -1,0 +1,7 @@
+appId: com.trackerteer.grg
+---
+- runFlow: order_module.yaml
+- runFlow: "../order_type/pick_up_module.yaml"
+- tapOn: "Place Order"
+- tapOn: "Confirm"
+- tapOn: "View"
