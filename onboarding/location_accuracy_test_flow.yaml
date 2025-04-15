@@ -1,0 +1,27 @@
+appId: com.trackerteer.grg
+---
+- repeat:
+    times: 50
+    commands:
+      - launchApp:
+          permissions:
+            notifications: unset # notification permission is unset
+            android.permission.ACCESS_FINE_LOCATION: deny # Android fine location permission is denied
+      - assertVisible: "Location Permission"
+      - tapOn: "Proceed"
+      - assertVisible:
+          id: "com.android.permissioncontroller:id/permission_message"
+      - tapOn: "While using the app"
+      - assertVisible: "To continue, your device will need to use Location Accuracy "
+      - tapOn: "Turn on"
+      - assertVisible: "RockyGo uses your location to show the restaurants near you!"
+      - tapOn: "Use current location"
+      - assertVisible:
+          id: "com.trackerteer.grg:id/text_address"
+      - tapOn: "Get Started"
+      - assertVisible: "Allow RockyGo to send you notifications?"
+      - tapOn:
+          id: "com.android.permissioncontroller:id/permission_allow_button"
+
+
+      
