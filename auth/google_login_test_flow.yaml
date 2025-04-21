@@ -1,0 +1,13 @@
+appId: com.trackerteer.grg
+---
+#google account has been registered
+- launchApp
+- tapOn:
+    id: "com.trackerteer.grg:id/image_account_menu"
+- tapOn:
+    id: "com.trackerteer.grg:id/image_view_google"
+- tapOn:
+    id: "com.google.android.gms:id/container"
+    index: 0
+- assertVisible:
+    id: "com.trackerteer.grg:id/custom_toolbar"

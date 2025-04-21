@@ -1,0 +1,10 @@
+appId: com.trackerteer.grg
+---
+#facebook account has been registered
+- launchApp
+- tapOn:
+    id: "com.trackerteer.grg:id/image_account_menu"
+- tapOn:
+    id: "com.trackerteer.grg:id/image_view_facebook"
+- assertVisible:
+    id: "com.trackerteer.grg:id/custom_toolbar"

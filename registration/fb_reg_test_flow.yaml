@@ -1,0 +1,29 @@
+appId: com.trackerteer.grg
+---
+
+- launchApp
+- tapOn:
+    id: "com.trackerteer.grg:id/image_account_menu"
+- tapOn:
+    id: "com.trackerteer.grg:id/image_view_facebook"
+- assertVisible: "NEARLY THERE!"
+- tapOn:
+    id: "com.trackerteer.grg:id/text_view_country_code"
+- tapOn:
+    id: "com.trackerteer.grg:id/text_input_edit_text_country_code_mobile_number"
+- scrollUntilVisible:
+    element: "+63 Philippines"
+    direction: "DOWN"
+    speed: 70
+    visibilityPercentage: 100
+    timeout: 50000
+- tapOn: "+63 Philippines"
+- inputText:
+    text: "09750035937"
+    into: "Mobile Number"
+- tapOn:
+    id: "com.trackerteer.grg:id/autocomplete_textview_birthday"
+- tapOn:
+    id: "com.trackerteer.grg:id/confirm_button"
+- tapOn:
+    id: "com.trackerteer.grg:id/button_update"
